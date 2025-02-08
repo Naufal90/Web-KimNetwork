@@ -27,9 +27,38 @@
         <section id="auth-section">
             <h2>Welcome to Our Minecraft Server!</h2>
             <p>Join our community and start your adventure today.</p>
-            <button id="github-login">Login with GitHub</button>
+
+            <!-- Register Form -->
+            <div id="register-form">
+                <h3>Register</h3>
+                <input type="text" id="register-gamertag" placeholder="Your Minecraft GamerTag" required>
+                <input type="email" id="register-email" placeholder="Your Email" required>
+                <input type="password" id="register-password" placeholder="Password" required>
+                <button id="register-button">Register</button>
+            </div>
+
+            <!-- Login Form -->
+            <div id="login-form">
+                <h3>Login</h3>
+                <input type="text" id="login-gamertag" placeholder="Your Minecraft GamerTag" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button id="login-button">Login</button>
+            </div>
+
+            <!-- Forgot Password Form -->
+            <div id="forgot-password-form" class="hidden">
+                <h3>Reset Password</h3>
+                <input type="email" id="reset-email" placeholder="Your Email" required>
+                <button id="reset-password-button">Send Reset Link</button>
+                <button id="back-to-login">Back to Login</button>
+            </div>
+
+            <!-- User Info -->
             <p id="user-info" class="hidden"></p>
             <button id="logout" class="hidden">Logout</button>
+
+            <!-- Forgot Password Link -->
+            <p><a href="#" id="forgot-password-link">Forgot Password?</a></p>
         </section>
     </main>
 
