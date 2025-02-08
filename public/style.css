@@ -56,7 +56,16 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#github-login {
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
     background-color: #333;
     color: #fff;
     border: none;
@@ -66,7 +75,7 @@ main {
     border-radius: 5px;
 }
 
-#github-login:hover {
+button:hover {
     background-color: #555;
 }
 
@@ -77,12 +86,6 @@ main {
 
 #logout {
     background-color: #e74c3c;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
     margin-top: 10px;
 }
 
